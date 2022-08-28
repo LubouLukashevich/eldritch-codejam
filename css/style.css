@@ -1,0 +1,180 @@
+@font-face {
+    font-family: 'Arial-MT';
+    src: url("../assets/fonts/Arial-MT.woff"); /* Путь к файлу со шрифтом */
+   }
+  
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    min-width: 480px;
+    min-height: 100vh;
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+    background: url("../assets/home.png") center/cover, rgba(0, 0, 0, 0.5);
+    background-blend-mode: multiply;
+    transition: background-image 1s ease-in-out;
+  }
+  
+  .header {
+    width: 100%;
+    height: 30vh;
+    min-height: 220px;  
+    padding: 20px;
+  }
+
+  .ancientsList {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+  }
+
+  .ancients {
+    text-align: center;
+  }
+
+  .ancientsFace {
+  width: 300px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 4px;
+  padding: 5px;
+  cursor: pointer;
+  }
+
+  .ancientsFace:hover {
+    width: 350px;
+    border: 1px solid rgba(224, 47, 240, 0.5);
+    border-radius: 4px;
+    padding: 5px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    }
+
+  .ancientsFaceChoice {
+    width: 350px;
+    border: 2px solid rgba(172, 28, 28, 1);
+    border-radius: 4px;
+    padding: 5px;
+    cursor: pointer;
+    }
+    
+  .ancientsFaceChoice:hover {
+    width: 350px;
+    border: 2px solid rgba(172, 28, 28, 1);
+    border-radius: 4px;
+    padding: 5px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    }
+
+
+  .main {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 40vh;
+    min-height: 260px;  
+    padding: 20px;
+  }
+
+  .start {
+    width: 250px;
+    height: 100px;
+    background-image: none; 
+    background: transparent;
+    border: none;
+    text-decoration: none;
+    color: #e7e7e7;
+    border: 2px solid #e7e7e7;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  .start:hover  {
+    background-color: #e7e7e7;
+    color: rgb(0, 0, 0);
+    transition-duration: 0.4s;
+  }
+
+  .invisible {
+    visibility: hidden;
+  }
+
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    height: 30vh;
+    min-height: 200px;  
+    padding: 20px;
+  }
+
+  .table_content {
+    flex-grow: 0;
+  }
+
+  .cardSet {
+    width: 300px;
+    min-height: 300px;  
+    border-collapse: separate;
+    border-spacing: 20px;
+    font-size: 16px;
+    padding: 10px 12px;
+  }
+
+  .green {
+    background: rgb(3, 128, 51);
+  }
+
+  .brown {
+    background: rgba(156, 89, 1, 0.966);
+  }
+   
+  .blue {
+    background: rgba(36, 0, 235, 0.966);
+  }
+
+  .backFace {
+    height: 300px;
+  }
+
+  .backFace:hover {
+    cursor: pointer;
+  }
+
+  .back {
+    flex-grow: 0;
+  }
+
+  .cards {
+    flex-grow: 1;
+    position: relative;
+  }  
+  
+  .cardFace {
+    height: 300px;
+  }
+
+  .cardFace:hover {
+    z-index: 20;
+  }
+  .stageFinish {
+    color:rgba(255, 255, 255, 0.3);
+  }
+
+  @media (max-width: 768px) {
+    .time {
+      min-height: 80px;
+      font-size: 72px;    
+    }
+}
